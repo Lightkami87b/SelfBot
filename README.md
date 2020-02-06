@@ -1,5 +1,5 @@
-### Telegram Cli Bot
-
+### Telegram Cli Bot By
+### By Tabahkar!
 <p >
     <a href="https://github.com/xtabahkar/Selfnium">
         <img src="https://i.ibb.co/pXJ9frm/BOgY9ai.png" alt="SelfBot">
