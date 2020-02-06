@@ -5,3 +5,4 @@ SelfBot.session
 .venv
 config.ini
 *.ini
+selfbot.session-journal
