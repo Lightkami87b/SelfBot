@@ -4,7 +4,7 @@ from db import r
 import time
 
 ### RECENTLY & ONLINE
-@Client.on_message(Filters.me & Filters.regex("^([Nn]obody|[Ee]verybody)$") , group=20)
+@Client.on_message(Filters.me & Filters.regex("^([Nn]obody|[Ee]verybody)$") , group=0)
 def setprivacy(app : Client ,msg : Message):
     if  "obody" in str(msg.text):
         app.send(

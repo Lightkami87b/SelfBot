@@ -40,7 +40,7 @@ def incoming(app : Client ,msg : Message):
             )
     
 ### SET ACTION
-@Client.on_message(Filters.regex("^[Ss]etaction (.*)$") & Filters.me , group=25)
+@Client.on_message(Filters.regex("^[Ss]etaction (.*)$") & Filters.me , group=0)
 def setaction(app : Client ,msg : Message):
     action = str(msg.text.split(" ")[1])
     r.set("action", action)
@@ -55,7 +55,7 @@ def setaction(app : Client ,msg : Message):
 
 
 
-@Client.on_message(Filters.regex("^[Aa]ctionlist$") & Filters.me , group=26)
+@Client.on_message(Filters.regex("^[Aa]ctionlist$") & Filters.me , group=1)
 def actionlist(app : Client ,msg : Message):
     text = """
 actions:
@@ -75,7 +75,7 @@ Setaction [action]
 """
     app.edit_message_text(text=text,
             chat_id=msg.chat.id,
-            message_id=msg.message_id,)\
+            message_id=msg.message_id,)
                 
     if r.get("autodel") == "on":
             time.sleep(float(r.get("autodeltime")))

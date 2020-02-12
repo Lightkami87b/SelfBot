@@ -9,7 +9,7 @@ def today(app : Client , msg : Message):
     req=requests.get("https://www.time.ir").content
     clock = requests.get("http://gahshomar-api.herokuapp.com/zone/Asia-Tehran").text[:11]
 
-    soup=BeautifulSoup(req,features="lxml")
+    soup     =BeautifulSoup(req,features="lxml")
     data=soup.select(".panel-footer .normal ")
     Gdate = data[0].text
     Qdate = data[1].text

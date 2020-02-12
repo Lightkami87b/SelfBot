@@ -2,7 +2,7 @@ from pyrogram import Client , Message , Filters
 from db import r
 import time
 
-@Client.on_message(Filters.me & Filters.regex("^[Aa]utodel? ?(\d*)$") , group=36)
+@Client.on_message(Filters.me & Filters.regex("^[Aa]utodel? ?(\d*)$") , group=0)
 def autodel(app : Client ,msg : Message):
     if " " in msg.text:
         timer = msg.text.split(" ")[1]
