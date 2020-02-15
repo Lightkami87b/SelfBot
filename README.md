@@ -1,4 +1,4 @@
-### Telegram Cli Bot By
+### Telegram Cli Bot
 ### By Dariush!
 <p >
     <a href="https://github.com/xtabahkar/Selfnium">
