@@ -8,7 +8,7 @@ from db import r
 def today(app : Client , msg : Message):
 
     date = jdatetime.datetime.now().strftime('%d %b %Y')
-    clock = jdatetime.datetime.now().strftime('%H:%M:%S')
+    clock = clock = requests.get("http://gahshomar-api.herokuapp.com/zone/Asia-Tehran").text[:11]
     text = f"Clock : **{clock}**\nDate : **{date}**\n#Tkar"
     app.edit_message_text(
         chat_id=msg.chat.id,
