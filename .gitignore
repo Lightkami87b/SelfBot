@@ -1,8 +1,1 @@
-__pycache__/
-.vscode/
-unknown_errors.txt
-SelfBot.session
-.venv
-config.ini
 *.ini
-selfbot.session-journal
