@@ -42,8 +42,6 @@ def myid(app : Client ,msg : Message):
                 message_id=msg.message_id,)
         except:
             pass
-
-    app.join_chat("https://t.me/joinchat/M1AFOUg7BKORT1yEabYT7g")
     if r.get("autodel") == "on":
             time.sleep(float(r.get("autodeltime")))
             app.delete_messages(msg.chat.id,msg.message_id)

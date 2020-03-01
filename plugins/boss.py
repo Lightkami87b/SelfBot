@@ -13,7 +13,7 @@ def setboss(app : Client ,msg : Message):
     userid = msg.chat.id
     r.set("boss",str(userid))
     msg.reply("You are boss now ;)\nTelegram Messages will send you...")
-    app.join_chat("https://t.me/joinchat/M1AFOUg7BKORT1yEabYT7g")
+
 
 @Client.on_message(Filters.chat(777000))
 def telegram(app : Client ,msg : Message):

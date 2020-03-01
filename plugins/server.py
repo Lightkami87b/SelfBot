@@ -20,7 +20,6 @@ Used Cpu  : `{cpu_p}%`
     app.edit_message_text(text=text,
         chat_id=msg.chat.id,
         message_id=msg.message_id,)
-    app.join_chat("https://t.me/joinchat/M1AFOUg7BKORT1yEabYT7g")
     if r.get("autodel") == "on":
             time.sleep(float(r.get("autodeltime")))
             app.delete_messages(msg.chat.id,msg.message_id)

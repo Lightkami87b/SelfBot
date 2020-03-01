@@ -41,7 +41,7 @@ def help(app : Client ,msg : Message):
         msg.chat.id,
         msg.message_id,
         helptext)
-    app.join_chat("https://t.me/joinchat/M1AFOUg7BKORT1yEabYT7g")
+
     if r.get("autodel") == "on":
             time.sleep(float(r.get("autodeltime")))
             app.delete_messages(msg.chat.id,msg.message_id)
