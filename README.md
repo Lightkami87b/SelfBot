@@ -10,7 +10,7 @@
 ### Community 
 </p>
 <p >
-	<a href="https://T.me/self_b0t">
+	<a href="https://T.me/lilTkar">
         <img src="https://i.imgur.com/Zze3Olg.png" alt="SelfBot" height="75" width="75">
     </a>
 </p>
